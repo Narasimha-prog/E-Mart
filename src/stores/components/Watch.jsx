@@ -10,9 +10,9 @@ const Watch = () => {
         {
           firstFivewatch.map((item)=>{
               return(
-                <Link to={`/watch/${item.id}`}>
+                <Link key={item.id} to={`/watch/${item.id}`}>
                   <div className='imagBox'>
-                    <img className='proImage transition-transform duration-300 hover:scale-110' src={item.image} alt="" /> 
+                    <img className='proImage transition-transform duration-300 hover:scale-110' src={item.image} alt={item.id} /> 
                   </div>
                   </Link>
           )

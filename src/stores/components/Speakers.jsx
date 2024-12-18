@@ -10,9 +10,9 @@ const Speakers = () => {
         {
           firstFivespeaker.map((item)=>{
               return(
-                <Link to={`/speak/${item.id}`}>
+                <Link key={item.id} to={`/speak/${item.id}`}>
                   <div className='imagBox'>
-                    <img className='proImage transition-transform duration-300 hover:scale-110' src={item.image} alt="" /> 
+                    <img className='proImage transition-transform duration-300 hover:scale-110' src={item.image} alt={item.id} /> 
                   </div>
                   </Link>
           )
