@@ -27,8 +27,8 @@ const NavBar = () => {
       {/* User Details */}
       <div className="user text-cyan-100 flex items-center mr-3 space-x-2 sm:space-x-4 text-sm sm:text-base">
         <div className="userDetails whitespace-nowrap flex">
-          <img  src='../public/assets/login.jpg' className='w-5 mx-2 sm:w-8' />
-          <img src='../public/assets/sign-up.png' className='w-5 sm:w-8' />
+          <img  src='/assets/login.jpg' className='w-5 mx-2 sm:w-8' />
+          <img src='/assets/sign-up.png' className='w-5 sm:w-8' />
         
         </div>
         <Link to="/cart">
