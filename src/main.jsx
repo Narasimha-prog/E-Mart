@@ -6,7 +6,7 @@ import { HashRouter } from 'react-router-dom'  // Use HashRouter instead of Brow
 import { CartProvider } from './context/CartContext.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <HashRouter basename='/E-Mart'>  {/* Use HashRouter */}
+  <HashRouter>  {/* Use HashRouter */}
     <StrictMode>
       <CartProvider>
         <App />
