@@ -12,7 +12,7 @@ const FridgeSinglePage = () => {
        <NavBar/>
     <div className="in-Page flex mt-10 ml-9 flex-wrap ">
           <div className="in-img  sm:mr-16">
-               <img src= {product.image} alt='mobile-img'/>
+               <img src= {`.${product.image}`} alt='mobile-img'/>
           </div>
           <div className="in-details mt-10  text-sm">
           <div className="in-com space">

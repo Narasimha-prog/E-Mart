@@ -51,7 +51,7 @@ const KitchenPage = () => {
                 <div className="pageImg">
                   <img
                     className="transition-transform duration-300 hover:scale-110"
-                    src={item.image}
+                    src={`.${item.image}`}
                     alt={item.model}
                   />
                 </div>

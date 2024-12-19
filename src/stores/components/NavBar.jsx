@@ -27,13 +27,13 @@ const NavBar = () => {
       {/* User Details */}
       <div className="user text-cyan-100 flex items-center mr-3 space-x-2 sm:space-x-4 text-sm sm:text-base">
         <div className="userDetails whitespace-nowrap flex">
-          <img  src='/assets/login.jpg' className='w-5 mx-2 sm:w-8' />
-          <img src='/assets/sign-up.png' className='w-5 sm:w-8' />
+          <img  src='./assets/login.jpg' className='w-5 mx-2 sm:w-8' />
+          <img src='./assets/sign-up.png' className='w-5 sm:w-8' />
         
         </div>
         <Link to="/cart">
           <div className="cart flex ">
-            <span> <img src='../public/assets/cart.png' className='w-5 sm:w-8 ' /></span>
+            <span> <img src='./assets/cart.png' className='w-5 sm:w-8 ' /></span>
             <span className="ml-1 text-red-700 font-serif font-bold">({cartitems.length})</span>
           </div>
         </Link>

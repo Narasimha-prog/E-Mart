@@ -12,7 +12,7 @@ const Women=()=>{
               return(
                 <Link key={item.id} to={`/women/${item.id}`}>
                   <div className='imagBox'>
-                    <img className='proImage transition-transform duration-300 hover:scale-110' src={item.image} alt={item.id} /> 
+                    <img className='proImage transition-transform duration-300 hover:scale-110' src={`.${item.image}`} alt={item.id} /> 
                   </div>
                   </Link>
           )

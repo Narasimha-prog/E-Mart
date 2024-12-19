@@ -13,7 +13,7 @@ const SpeakerSinglePage = () => {
        <NavBar/>
     <div className="in-Page flex mt-10 ml-9 flex-wrap">
           <div className="in-img sm:mr-16">
-               <img src={`/${product.image}`} alt={`${product.image}`}/>
+               <img src={`./${product.image}`} alt={`${product.image}`}/>
                
           </div>
           <div className="in-details mt-10  text-sm">

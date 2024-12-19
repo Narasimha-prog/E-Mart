@@ -51,7 +51,7 @@ const WomenPage = () => {
                 <div className="pageImg">
                   <img
                     className="transition-transform duration-300 hover:scale-110"
-                    src={image}
+                    src={`.${image}`}
                     alt={model}
                   />
                 </div>

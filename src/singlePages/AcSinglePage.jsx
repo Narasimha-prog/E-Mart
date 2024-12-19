@@ -12,7 +12,7 @@ const AcSinglePage = () => {
        <NavBar/>
        <div className="ind-Page flex mt-10 ml-9 flex-wrap ">
   <div className="ind-imge sm:mr-16">
-    <img src={product.image} alt="mobile-img" className="max-w-full h-auto" />
+    <img src={`.${product.image}`} alt="mobile-img" className="max-w-full h-auto" />
   </div>
   <div className="in-details mt-10  text-sm">
     {/* Company */}
