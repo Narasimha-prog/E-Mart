@@ -28,19 +28,22 @@ const BooksPage = () => {
   return (
     <>
       <NavBar />
-      <div className="flex">
+      <div className="flex items-start">
         {/* Categories Filter */}
-        <div className="border-2 border-stone-600 h-fit p-2">
+        <div className="max-w-sm sm:w-52 bg-gray-50 border border-gray-200 rounded-lg p-4 shadow-sm sticky top-20 md:w-auto">
           {uniqueCategories.map((category) => (
             <div key={category}>
-              <label htmlFor={`checkbox-${category}`} className="flex">
+              <label
+                htmlFor={`checkbox-${category}`} 
+                 className="flex cursor-pointer items-center space-x-2">
                 <input
                   id={`checkbox-${category}`}
                   type="checkbox"
                   checked={selectedProduct.includes(category)}
                   onChange={() => companyHandler(category)}
+                   className="cursor-pointer"
                 />
-                <div className="font-sans font-semibold">{category}</div>
+                <div className="font-sans font-medium truncate">{category}</div>
               </label>
             </div>
           ))}
@@ -52,11 +55,14 @@ const BooksPage = () => {
             <div>No books available for the selected categories.</div>
           ) : (
             filteredProduct.map((item) => (
-              <div key={item.id}>
+              <div key={item.id}
+              className=""
+              >
+                
                 <Link to={`/book/${item.id}`}>
                   <div className="pageImg">
                     <img
-                      className="transition-transform duration-300 hover:scale-110"
+                      className=" "
                       src={item.image}
                       alt={item.title}
                     />

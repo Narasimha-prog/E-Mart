@@ -27,18 +27,22 @@ const SpeakersPage = () => {
   return (
     <>
       <NavBar />
-      <div className="flex">
+      <div className="flex items-start">
         {/* Sidebar for brands */}
-        <div className="border-2 border-stone-600 h-fit p-2">
+        <div className="max-w-sm sm:w-52 bg-gray-50 border border-gray-200 rounded-lg p-4 shadow-sm">
           {uniqueBrands.map((brand) => (
             <div key={brand}>
-              <label className="flex">
+              <label 
+             htmlFor={`checkbox-${brand}`} 
+             className="flex cursor-pointer items-center space-x-2">
                 <input
+                   id={`checkbox-${brand}`}
                   type="checkbox"
                   checked={selectedProduct.includes(brand)}
                   onChange={() => companyHandler(brand)}
+                   className="cursor-pointer"
                 />
-                <div className="font-semibold font-sans">{brand}</div>
+                <div className="font-medium font-sans truncate">{brand}</div>
               </label>
             </div>
           ))}
@@ -47,11 +51,14 @@ const SpeakersPage = () => {
         {/* Grid for displaying filtered speakers */}
         <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 m-10">
           {filteredProduct.map(({ id, image, brand, model }) => (
-            <div key={id}>
+            <div 
+            key={id}
+            className="cursor-pointer border rounded-lg p-2 transition-all duration-300 hover:shadow-lg hover:scale-105"
+            >
               <Link to={`/speak/${id}`}>
                 <div className="pageImg">
                   <img
-                    className="transition-transform duration-300 hover:scale-110"
+                    className=""
                     src={image}
                     alt={model}
                   />
