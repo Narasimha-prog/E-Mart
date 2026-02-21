@@ -18,7 +18,7 @@ const menuItems = [
 ];
 
 const NavBar = () => {
-  const { cartitems } = useCart();
+  const { cartItems } = useCart();
 
   return (
     <>
@@ -46,7 +46,7 @@ const NavBar = () => {
           </div>
           <Link to="/cart" className="cart flex items-center space-x-1 hover:scale-105 transition">
             <img src="./assets/cart.png" className="w-5 sm:w-8" alt="Cart" />
-            <span className="text-red-700 font-serif font-bold">({cartitems.length})</span>
+            <span className="text-red-700 font-serif font-bold">({cartItems.length})</span>
           </Link>
         </div>
       </div>

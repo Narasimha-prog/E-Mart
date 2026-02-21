@@ -5,7 +5,7 @@ import NavBar from '../stores/components/NavBar.jsx'
 import { useCart } from '../context/CartContext.jsx'
 const MobileSinglePage = () => {
     const {id}=useParams()
-    const { cartitems, additem } = useCart();       
+    const {  addItem } = useCart();       
         const product=mobileData.find((item)=>item.id===id)
   return (
     <>
@@ -29,9 +29,7 @@ const MobileSinglePage = () => {
           </div>
              <button
              className="bg-orange-500 hover:bg-orange-600 active:bg-green-500 text-white font-bold  rounded transition duration-300 mt-4  sm:py- sm:px-2 sm:text-lg px-3 py-2" 
-             onClick={()=>
-              
-              {additem(product); } }>Add to Cart</button>
+               onClick={()=>addItem(product)  }>Add to Cart</button>
           </div>
         
     </div>

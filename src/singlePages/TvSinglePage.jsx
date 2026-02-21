@@ -5,7 +5,7 @@ import NavBar from '../stores/components/NavBar.jsx'
 import { tvData } from '../stores/data/tv.js'
 const TvSinglePage = () => {
     const {id}=useParams()
-    const { cartitems, additem } = useCart();       
+    const {  addItem } = useCart();       
         const product=tvData.find((item)=>item.id===id)
         console.log('Product to add:', product); console.log('Product image URL:', product.image);
   return (
@@ -30,9 +30,7 @@ const TvSinglePage = () => {
           </div>
              <button 
              className="bg-orange-500 hover:bg-orange-600 active:bg-green-500 text-white font-bold  rounded transition duration-300 mt-4  sm:py- sm:px-2 sm:text-lg px-3 py-2"
-             onClick={()=>
-              
-              {additem(product); } }>Add to Cart</button>
+              onClick={()=>addItem(product)  }>Add to Cart</button>
           </div>
         
     </div>
