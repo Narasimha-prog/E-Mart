@@ -1,67 +1,74 @@
-🛒 E-Mart – React E-Commerce Application
+# 🛒 E-Mart – React E-Commerce Application
 
-E-Mart is a modern e-commerce web application built using React.
+E-Mart is a modern e-commerce web application built using React.  
 It allows users to browse products by category, view product details, and manage a shopping cart with quantity control.
 
-🚀 Features
+---
 
-🏪 Multiple product categories (Mobiles, TVs, Books, Furniture, etc.)
+## 🚀 Features
 
-📄 Single product detail pages
+- 🏪 Multiple product categories (Mobiles, TVs, Books, Furniture, etc.)
+- 📄 Single product detail pages
+- 🛒 Add to Cart functionality
+- ➕ Increase / ➖ Decrease quantity
+- 🗑 Remove items from cart
+- 💰 Dynamic total price calculation
+- 📱 Responsive design
+- ⚛️ Built using React functional components & Context API
 
-🛒 Add to Cart functionality
+---
 
-➕ Increase / ➖ Decrease quantity
+## 📂 Project Structure
 
-🗑 Remove items from cart
-
-💰 Dynamic total price calculation
-
-📱 Responsive design
-
-⚛️ Built using React functional components & Context API
-
-📂 Project Structure
 src/
 │
 ├── context/
-│   └── CartContext.jsx
+│ └── CartContext.jsx
 │
 ├── singlePages/
-│   └── (All single product detail pages)
+│ └── (All single product detail pages)
 │
 ├── stores/
-│   ├── components/
-│   ├── data/
-│   ├── pages/
-│   └── UserCart.jsx
+│ ├── components/
+│ ├── data/
+│ ├── pages/
+│ └── UserCart.jsx
 │
 ├── App.jsx
 ├── main.jsx
 └── index.css
-🧠 Technologies Used
 
-React
 
-Context API (State Management)
+---
 
-React Router
+## 🧠 Technologies Used
 
-JavaScript (ES6+)
+- React
+- Context API (State Management)
+- React Router
+- JavaScript (ES6+)
+- CSS
 
-CSS
+---
 
-🛠 Installation & Setup
-1️⃣ Clone the repository
+## 🛠 Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+
 2️⃣ Navigate to project folder
 cd E-Mart
 3️⃣ Install dependencies
 npm install
 4️⃣ Run development server
+
+If using Vite:
+
 npm run dev
 
-OR (if using Create React App)
+If using Create React App:
 
 npm start
 🏗 Build for Production
@@ -76,7 +83,7 @@ This will:
 
 Build the project
 
-Push the production files (dist/ or build/) to gh-pages branch
+Push the production files (dist/ or build/) to the gh-pages branch
 
 Deploy automatically
 
@@ -86,7 +93,7 @@ Cart is managed using:
 
 context/CartContext.jsx
 
-Includes:
+Functions included:
 
 addItem()
 
@@ -96,10 +103,12 @@ decreaseQuantity()
 
 removeFromCart()
 
-Total price is calculated using:
+Total price calculation:
 
-cartItems.reduce((total, item) => 
-  total + item.price * item.quantity, 0)
+cartItems.reduce(
+  (total, item) => total + item.price * item.quantity,
+  0
+);
 📸 Categories Available
 
 Mobiles
@@ -131,15 +140,9 @@ Women
 Developed by Lakshmi Narasimha Reddy Pittu
 
 📌 Future Improvements
-
 🔐 User Authentication
-
 💳 Payment Integration
-
 🗄 Backend API Integration
-
 📦 Order History
-
 ❤️ Wishlist
-
 🔎 Search & Filter
