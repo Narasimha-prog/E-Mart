@@ -20,26 +20,24 @@ It allows users to browse products by category, view product details, and manage
 
 ## 📂 Project Structure
 
-src/
+```
+src
+├── context
+│   └── CartContext.jsx
 │
-├── context/
-│ └── CartContext.jsx
+├── singlePages
+│   └── (All single product detail pages)
 │
-├── singlePages/
-│ └── (All single product detail pages)
-│
-├── stores/
-│ ├── components/
-│ ├── data/
-│ ├── pages/
-│ └── UserCart.jsx
+├── stores
+│   ├── components
+│   ├── data
+│   ├── pages
+│   └── UserCart.jsx
 │
 ├── App.jsx
 ├── main.jsx
 └── index.css
-
-
----
+```
 
 ## 🧠 Technologies Used
 
